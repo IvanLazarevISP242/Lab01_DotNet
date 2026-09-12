@@ -22,6 +22,7 @@ Console.Write("\nВведите ваш любимый предмет: ");
 Console.WriteLine($"Отлично! {fn} любит {Console.ReadLine()}");
 */
 
+/*
 int a = 15; int b = 4;
 Console.WriteLine($"Сумма: {a+b}");
 Console.WriteLine($"Разность: {a-b}");
@@ -56,3 +57,35 @@ else
 {
   Console.WriteLine("Деление на 0 невозможно!");
 }
+*/
+
+Console.WriteLine("Добро пожаловать в анк");
+Console.Write("Введите ваше имя: ");
+string n = Console.ReadLine();
+Console.Write("Введите вашу фамилию: ");
+string sn = Console.ReadLine();
+Console.Write("Введите вашу группу: ");
+string g = Console.ReadLine();
+Console.Write("Введите ваш год рождения: ");
+int by = int.Parse(Console.ReadLine());
+
+Console.Write("Введите ваш средний балл: ");
+double avg = double.Parse(Console.ReadLine());
+int cy = 2026;
+int age = cy - by;
+bool isExcellent = avg >= 4.5;
+
+string status;
+if (isExcellent) status = "Отличник";
+else status = "Хорошист";
+
+Console.WriteLine($"Ваша анкета:");
+Console.WriteLine($"Имя: {n} {sn}");
+Console.WriteLine($"Группа: {g}");
+Console.WriteLine($"Возраст: {age}");
+Console.WriteLine($"Средний балл: {avg}");
+Console.WriteLine($"Статус: {status}");
+Console.WriteLine($"Лет до 30: {30 - age}");
+
+Console.WriteLine("Нажмите Enter для выхода...");
+Console.ReadLine();
