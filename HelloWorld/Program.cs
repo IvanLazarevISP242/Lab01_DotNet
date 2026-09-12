@@ -59,6 +59,7 @@ else
 }
 */
 
+/*
 Console.WriteLine("Добро пожаловать в анк");
 Console.Write("Введите ваше имя: ");
 string n = Console.ReadLine();
@@ -89,3 +90,50 @@ Console.WriteLine($"Лет до 30: {30 - age}");
 
 Console.WriteLine("Нажмите Enter для выхода...");
 Console.ReadLine();
+*/
+
+Console.Write("Ваша любимая игра/кино/аниме: ");
+string a2 = Console.ReadLine();
+Console.Write("Ваша любимая цифра: ");
+string b2 = Console.ReadLine();
+Console.Write("Значение числа пи: ");
+double c2 = double.Parse(Console.ReadLine());
+Console.Write("Ваша любимая буква алфавита: ");
+string d2 = Console.ReadLine();
+
+Console.WriteLine($"{a2}");
+Console.WriteLine($"{b2}");
+Console.WriteLine($"{c2}");
+Console.WriteLine($"{d2}");
+
+
+Console.WriteLine("I");
+Console.WriteLine("need");
+Console.WriteLine("more");
+Console.WriteLine("power!");
+
+Console.WriteLine("\"Hellow There\"");
+
+
+Console.Write("Стоимость монитора: ");
+int a1 = int.Parse(Console.ReadLine());
+Console.Write("Стоимость системного блока: ");
+int b1 = int.Parse(Console.ReadLine());
+Console.Write("Стоимость клавиатура: ");
+int c1 = int.Parse(Console.ReadLine());
+Console.Write("Стоимость мыши: ");
+int d1 = int.Parse(Console.ReadLine());
+Console.WriteLine($"{(a1 + b1 + c1 + d1) * 3}");
+
+
+Console.Write("a: ");
+int a = int.Parse(Console.ReadLine());
+Console.Write("b: ");
+int b = int.Parse(Console.ReadLine());
+
+Console.WriteLine($"{3 * Math.Pow(a + b, 3) + 275 * Math.Pow(b, 2) - 127 * a - 41}");
+
+
+Console.Write("Нпалусы Цельсия: ");
+double a3 = double.Parse(Console.ReadLine());
+Console.WriteLine($"{1.8 * a3 + 32}");
